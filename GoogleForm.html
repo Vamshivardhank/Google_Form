@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Add your custom CSS styles here */
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <form id="customForm">
+            <div class="form-group">
+                <label for="mcqQuestion">MCQ*</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="mcqQuestion" id="mcqOption1" value="Option 1" required>
+                    <label class="form-check-label" for="mcqOption1">Option 1</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="mcqQuestion" id="mcqOption2" value="Option 2" required>
+                    <label class="form-check-label" for="mcqOption2">Option 2</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="mcqQuestion" id="mcqOption3" value="Option 3" required>
+                    <label class="form-check-label" for="mcqOption3">Option 3</label>
+                </div>
+            </div>
+
+            <!-- Checkbox -->
+            <div class="form-group">
+                <label for="checkboxQuestion">Checkbox*</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="checkboxOption1" id="checkboxOption1" value="Option 1">
+                    <label class="form-check-label" for="checkboxOption1">Option 1</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="checkboxOption2" id="checkboxOption2" value="Option 2">
+                    <label class="form-check-label" for="checkboxOption2">Option 2</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="checkboxOption3" id="checkboxOption3" value="Option 3">
+                    <label class="form-check-label" for="checkboxOption3">Option 3</label>
+                </div>
+            </div>
+            <!-- Short Answer -->
+            <div class="form-group">
+                <label for="shortAnswer">Short Answer*</label>
+                <input type="text" class="form-control" name="shortAnswer" id="shortAnswer" placeholder="Your Answer" required>
+            </div>
+            <!-- ParaGraph -->
+            <div class="form-group">
+                <label for="paragraph">Paragraph*</label>
+                <textarea class="form-control" name="paragraph" id="paragraph" rows="2"placeholder="Your Answer"  required></textarea>
+            </div>
+            <!--Drop Down -->
+            <div class="form-group">
+                <label for="dropdown">Dropdown*</label>
+                <select class="form-control" name="dropdown" id="dropdown" required>
+                    <option value="">Select an option</option>
+                    <option value="Option 1">Option 1</option>
+                    <option value="Option 2">Option 2</option>
+                    <option value="Option 3">Option 3</option>
+                </select>
+            </div>
+            <!-- File Upload -->
+            <div class="form-group">
+                <label for="fileUpload">File Upload*</label>
+                <input type="file" class="form-control-file" name="fileUpload" id="fileUpload" required>
+            </div>
+            <!-- Linear Scale -->
+            <div class="form-group">
+                <label for="linearScale">Linear Scale *</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="linearScale" id="scaleOption1" value="1" required>
+                    <label class="form-check-label" for="scaleOption1">1(Worst) </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="linearScale" id="scaleOption2" value="2">
+                    <label class="form-check-label" for="scaleOption2">2</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="linearScale" id="scaleOption3" value="3">
+                    <label class="form-check-label" for="scaleOption3">3</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="linearScale" id="scaleOption4" value="4">
+                    <label class="form-check-label" for="scaleOption4">4</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="linearScale" id="scaleOption5" value="5" required>
+                    <label class="form-check-label" for="scaleOption5">5(Best)</label>
+                </div>
+            </div>
+            <!-- MultiChoice Grid -->
+            <div class="form-group">
+                <label>Multi-Choice Grid *</label>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Column 1</th>
+                            <th>Column 2</th>
+                            <th>Column 3</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Row 1</th>
+                            <td><input type="radio" name="gridOptionRow1" value="Row1Column1" required></td>
+                            <td><input type="radio" name="gridOptionRow1" value="Row1Column2" required></td>
+                            <td><input type="radio" name="gridOptionRow1" value="Row1Column3" required></td>
+                        </tr>
+                        <tr>
+                            <th>Row 2</th>
+                            <td><input type="radio" name="gridOptionRow2" value="Row2Column1" required></td>
+                            <td><input type="radio" name="gridOptionRow2" value="Row2Column2" required></td>
+                            <td><input type="radio" name="gridOptionRow2" value="Row2Column3" required></td>
+                        </tr>
+                        <tr>
+                            <th>Row 3</th>
+                            <td><input type="radio" name="gridOptionRow3" value="Row3Column1" required></td>
+                            <td><input type="radio" name="gridOptionRow3" value="Row3Column2" required></td>
+                            <td><input type="radio" name="gridOptionRow3" value="Row3Column3" required></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- Multi Tick Box Grid -->
+            <div class="form-group">
+                <label>Tick Box Grid *</label>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Column 1</th>
+                            <th>Column 2</th>
+                            <th>Column 3</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Row 1</th>
+                            <td><input type="checkbox" name="tickBoxRow1[]" value="Row1Column1"></td>
+                            <td><input type="checkbox" name="tickBoxRow1[]" value="Row1Column2"></td>
+                            <td><input type="checkbox" name="tickBoxRow1[]" value="Row1Column3"></td>
+                        </tr>
+                        <tr>
+                            <th>Row 2</th>
+                            <td><input type="checkbox" name="tickBoxRow1[]" value="Row1Column1"></td>
+                            <td><input type="checkbox" name="tickBoxRow1[]" value="Row1Column2"></td>
+                            <td><input type="checkbox" name="tickBoxRow1[]" value="Row1Column3"></td>
+                        </tr>
+                        <tr>
+                            <th>Row 3</th>
+                            <td><input type="checkbox" name="tickBoxRow1[]" value="Row1Column1"></td>
+                            <td><input type="checkbox" name="tickBoxRow1[]" value="Row1Column2"></td>
+                            <td><input type="checkbox" name="tickBoxRow1[]" value="Row1Column3"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+           
+            
+            
+            
+            
+            
+            
+            
+
+            <button type="submit" class="btn btn-primary"  >Submit</button>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        document.getElementById("customForm").addEventListener("submit", function(event) {
+            const checkboxes = document.querySelectorAll('input[name="checkboxOption1"], input[name="checkboxOption2"], input[name="checkboxOption3"]');
+            let isChecked = false;
+            
+            checkboxes.forEach(checkbox => {
+                if (checkbox.checked) {
+                    isChecked = true;
+                }
+            });
+    
+            if (!isChecked) {
+                alert("Please select at least one checkbox option.");
+                event.preventDefault();
+            }
+        });
+       
+    </script>
+   
+    
+    
+    
+    
+    
+    
+</body>
+</html>
